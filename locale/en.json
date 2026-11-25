@@ -1,0 +1,7 @@
+{
+  "meta": {
+    "title": "Token Plan Quota",
+    "description": "Live view of your Qianwen Token Plan Credits in Settings > Plugins. Real data comes from the official qianwen CLI (installed and logged in on this machine); when it is unavailable, a clearly-marked local estimate is derived from usage already recorded in session logs — the plugin never fires model calls to probe quota. The sk-sp key is resolved from environment variables on this machine (QWEN_TOKEN_PLAN_CN_API_KEY) and is never displayed or logged.",
+    "detail": "docs/DETAIL.md"
+  }
+}

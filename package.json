@@ -1,0 +1,67 @@
+{
+  "name": "dsh-tokenplan-quota",
+  "version": "0.2.4",
+  "description": "Token Plan quota panel for DeepSeek Harness: live view of remaining Qianwen Token Plan Credits (tier, reset time, data-source badge) via the official qianwen CLI with a local estimate fallback.",
+  "license": "MIT",
+  "type": "module",
+  "main": "./host/index.js",
+  "exports": {
+    ".": "./host/index.js",
+    "./client": "./client/index.js",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "immediately": true,
+      "inject": [
+        "@deepseek-ai/dsh-api-remotes",
+        "@deepseek-ai/dsh-client-ui-settings",
+        "@deepseek-ai/dsh-client-ui-settings-plugins"
+      ]
+    }
+  },
+  "files": [
+    "host/**",
+    "client/**",
+    "locale/**",
+    "docs/**",
+    "icon.svg",
+    "cordis.patch.yml",
+    "README.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=20",
+    "dsh": ">=0.2.0-rc.1 <0.3.0-0"
+  },
+  "peerDependencies": {
+    "@deepseek-ai/cordis": "^4.1.0",
+    "@deepseek-ai/schemastery": "~3.19.0"
+  },
+  "keywords": [
+    "deepseek",
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "client-plugin",
+    "qianwen",
+    "qwen",
+    "token-plan",
+    "quota",
+    "credits",
+    "cost"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FriendG3154/dsh-tokenplan-quota.git"
+  },
+  "homepage": "https://github.com/FriendG3154/dsh-tokenplan-quota#readme",
+  "bugs": {
+    "url": "https://github.com/FriendG3154/dsh-tokenplan-quota/issues"
+  }
+}

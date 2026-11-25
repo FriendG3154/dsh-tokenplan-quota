@@ -1,0 +1,20 @@
+# dsh-tokenplan-quota bundle layer.
+# One inserted row mounts both halves of the plugin: host/index.js (data
+# sources, cache, HTTP routes, agent tool) and client/index.js (the Web UI
+# panel). The task contract asks for a Host row + Client row; in this loader
+# dialect a single entry with `dsh.client` in package.json contributes the
+# host fiber row and the client artifact together (same shape as the live
+# dsh-plugin-memory / dsh-qwen-mcp bundles on this machine).
+- insert:
+    - id: tokenplan-quota
+      name: "dsh-tokenplan-quota"
+      config:
+        # Poll cadence for the qianwen CLI real source (seconds, volatile —
+        # changes apply in place without restarting the plugin).
+        pollIntervalSec: 120
+        # Per-command timeout for CLI spawns (seconds).
+        cliTimeoutSec: 20
+        # Optional ENVIRONMENT VARIABLE NAME holding the sk-sp key (v0.1.1:
+        # env-only resolution; the credentials service is no longer injected).
+        # When unset the host probes: QWEN_TOKEN_PLAN_CN_API_KEY -> TOKENPLAN_QUOTA_API_KEY.
+        apiKeyRef: ""

@@ -1,0 +1,7 @@
+{
+  "meta": {
+    "title": "Token Plan 额度面板",
+    "description": "在「设置 → 插件」中实时查看千问 Token Plan 的 Credits 额度。真实数据来自官方 qianwen CLI（需本机安装并 qianwen auth login）；CLI 不可用时显示带「估算」标识的本机用量推算值——插件绝不为探测额度而发起模型调用。sk-sp 密钥仅经环境变量在本机解析（QWEN_TOKEN_PLAN_CN_API_KEY），界面与日志不回显。",
+    "detail": "docs/DETAIL.md"
+  }
+}

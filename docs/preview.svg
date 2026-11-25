@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="300" viewBox="0 0 640 300">
+  <rect x="0" y="0" width="640" height="300" rx="18" fill="#f4f5f7"/>
+  <!-- panel card -->
+  <rect x="40" y="36" width="560" height="228" rx="14" fill="#ffffff" stroke="#dcdfe6" stroke-width="2"/>
+  <!-- header line + refresh pill -->
+  <rect x="64" y="60" width="180" height="16" rx="8" fill="#1f2329"/>
+  <rect x="64" y="84" width="120" height="10" rx="5" fill="#c9cdd4"/>
+  <rect x="480" y="56" width="96" height="30" rx="15" fill="#eef0f3" stroke="#dcdfe6" stroke-width="2"/>
+  <circle cx="528" cy="71" r="8" fill="none" stroke="#4e5969" stroke-width="3"/>
+  <path d="M528 63 a8 8 0 0 1 7 5" fill="none" stroke="#4e5969" stroke-width="3" stroke-linecap="round"/>
+  <!-- big remaining number (abstract blocks) -->
+  <rect x="64" y="118" width="26" height="44" rx="6" fill="#6c5ce7"/>
+  <rect x="98" y="118" width="26" height="44" rx="6" fill="#6c5ce7"/>
+  <rect x="132" y="118" width="26" height="44" rx="6" fill="#a29bfe"/>
+  <rect x="170" y="134" width="70" height="12" rx="6" fill="#c9cdd4"/>
+  <!-- source badge -->
+  <rect x="256" y="126" width="118" height="26" rx="13" fill="rgba(0,180,42,.14)"/>
+  <circle cx="272" cy="139" r="5" fill="#00b42a"/>
+  <rect x="284" y="134" width="76" height="10" rx="5" fill="#00b42a" opacity=".55"/>
+  <!-- usage bar -->
+  <rect x="64" y="184" width="480" height="12" rx="6" fill="#e5e6eb"/>
+  <rect x="64" y="184" width="312" height="12" rx="6" fill="#6c5ce7"/>
+  <!-- meta grid: label+value pairs -->
+  <g fill="#c9cdd4">
+    <rect x="64" y="214" width="60" height="8" rx="4"/>
+    <rect x="64" y="228" width="92" height="12" rx="6" fill="#4e5969"/>
+    <rect x="220" y="214" width="60" height="8" rx="4"/>
+    <rect x="220" y="228" width="110" height="12" rx="6" fill="#4e5969"/>
+    <rect x="388" y="214" width="60" height="8" rx="4"/>
+    <rect x="388" y="228" width="96" height="12" rx="6" fill="#4e5969"/>
+  </g>
+  <!-- coin motif right side -->
+  <circle cx="560" cy="120" r="30" fill="#f6ffed" stroke="#00b42a" stroke-width="3"/>
+  <circle cx="560" cy="120" r="18" fill="none" stroke="#00b42a" stroke-width="3" opacity=".5"/>
+</svg>
